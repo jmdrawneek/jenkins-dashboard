@@ -62,25 +62,25 @@ var config = {
                 {
                     type: 'jenkins.view',
                     view: 'all',
-                    columns: 1, rows: 1,
+                    columns: 4, rows: 2,
                     x: 0, y: 0
                 },
                 {
                     type: 'github.repository_contributors_stats',
                     repository: 'plouc/mozaik',
                     columns: 1, rows: 1,
-                    x: 2, y: 0
+                    x: 2, y: 3
                 },
 
                 {
                     type: 'time.clock',
                     columns: 1, rows: 1,
-                    x: 3, y: 0
+                    x: 3, y: 3
                 },
                 {
                     type: 'github.status',
                     columns: 1, rows: 1,
-                    x: 0, y: 2
+                    x: 0, y: 3
                 }
             ]
         },
