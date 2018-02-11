@@ -18,7 +18,7 @@ console.log('TEST ENV VAR : ' + process.env.JENKINS_API_BASIC_AUTH_USER);
 var config = {
     env:  'prod',
 
-    host: 'localhost',
+    host: '0.0.0.0',
     port: port,
 
     // Available themes:
