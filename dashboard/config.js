@@ -1,7 +1,9 @@
+var path = require('path');
 // Load environment variables from .env file if available
 var configPath = './';
 if (process.env.USER === 'jenkins') {
-  configPath = '/dashboards';
+  configPath = path.resolve(__dirname, '../../.env');
+  console.log('Config path: ' + configPath);
 }
 
 require('dotenv').load({path: configPath});
