@@ -26,6 +26,7 @@
     "mozaik-ext-jenkins": "^1.2.0",
     "mozaik-ext-time": "1.1.0",
     "mozaik-ext-travis": "1.1.0",
+    "node-env-file": "^0.1.8",
     "react": "^0.13.3"
   },
   "scripts": {

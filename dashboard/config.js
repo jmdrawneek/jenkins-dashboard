@@ -1,15 +1,12 @@
-var path = require('path');
+const path = require('path');
+const env = require('node-env-file');
 // Load environment variables from .env file if available
-var configPath = './';
+var configPath = './.env';
 if (process.env.USER === 'jenkins') {
   configPath = path.resolve(process.cwd(), '../../.env');
 }
 
-const result = require('dotenv').load({path: configPath});
-
-if (result.error) {
-  throw result.error
-}
+env(configPath  , {verbose: true, overwrite: true, raise: false, logger: console});
 
 var port = process.env.PORT || 5050;
 
