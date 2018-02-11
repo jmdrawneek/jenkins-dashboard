@@ -6,11 +6,13 @@ if (process.env.USER === 'ec2-user') {
 
 require('dotenv').load({path: configPath});
 
+console.log('Dashboard will run on : ' + process.env.PORT || 5050);
+
 var config = {
     env:  'prod',
 
     host: '0.0.0.0',
-    port: process.env.PORT || 5000,
+    port: process.env.PORT || 5050,
 
     // Available themes:
     // + bordeau
