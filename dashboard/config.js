@@ -94,6 +94,13 @@ var config = {
             columns: 2, rows: 2,
             x: 0, y: 0
           },
+          {
+            type: 'github.PullRequests',
+            job: 'Backup_all_Platform_sites',
+            repository: 'plouc/mozaik',
+            columns: 2, rows: 2,
+            x: 3, y: 0
+          }
         ]
 
       }
