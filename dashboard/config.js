@@ -2,7 +2,7 @@ var path = require('path');
 // Load environment variables from .env file if available
 var configPath = './';
 if (process.env.USER === 'jenkins') {
-  configPath = path.resolve(__dirname, '../../.env');
+  configPath = path.resolve(__dirname, '../../');
   console.log('Config path: ' + configPath);
 }
 
