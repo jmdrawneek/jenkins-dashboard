@@ -62,7 +62,7 @@ var config = {
                 {
                     type: 'jenkins.view',
                     view: 'all',
-                    columns: 4, rows: 2,
+                    columns: 4, rows: 3,
                     x: 0, y: 0
                 },
                 {
