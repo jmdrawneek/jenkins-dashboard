@@ -2,7 +2,7 @@ var path = require('path');
 // Load environment variables from .env file if available
 var configPath = './';
 if (process.env.USER === 'jenkins') {
-  configPath = path.resolve(__dirname, '../../');
+  configPath = path.resolve(process.cwd(), '../../.env');
 }
 
 const result = require('dotenv').load({path: configPath});
@@ -13,6 +13,7 @@ if (result.error) {
 
 var port = process.env.PORT || 5050;
 
+console.log('Config located at : ' + configPath);
 console.log('Dashboard user : ' + process.env.USER);
 console.log('Dashboard will run on : ' + port);
 console.log('TEST ENV VAR : ' + process.env.JENKINS_API_BASIC_AUTH_USER);
