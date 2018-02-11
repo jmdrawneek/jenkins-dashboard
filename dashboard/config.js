@@ -1,18 +1,21 @@
 // Load environment variables from .env file if available
 var configPath = './';
-if (process.env.USER === 'ec2-user') {
-  configPath = '/home/ec2-user';
+if (process.env.USER === 'jenkins') {
+  configPath = '/dashboards';
 }
 
 require('dotenv').load({path: configPath});
 
-console.log('Dashboard will run on : ' + process.env.PORT || 5050);
+var port = process.env.PORT || 5050;
+
+console.log('Dashboard user : ' + process.env.USER);
+console.log('Dashboard will run on : ' + port);
 
 var config = {
     env:  'prod',
 
-    host: '0.0.0.0',
-    port: process.env.PORT || 5050,
+    host: 'localhost',
+    port: port,
 
     // Available themes:
     // + bordeau
