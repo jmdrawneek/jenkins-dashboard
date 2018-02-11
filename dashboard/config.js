@@ -15,6 +15,7 @@ var port = process.env.PORT || 5050;
 
 console.log('Dashboard user : ' + process.env.USER);
 console.log('Dashboard will run on : ' + port);
+console.log('TEST ENV VAR : ' + process.env.JENKINS_API_BASIC_AUTH_USER);
 
 var config = {
     env:  'prod',
