@@ -61,7 +61,7 @@ var config = {
             widgets: [
                 {
                     type: 'jenkins.view',
-                    view: 'dev-env',
+                    view: 'all',
                     columns: 1, rows: 1,
                     x: 0, y: 0
                 },
