@@ -3,10 +3,13 @@ var path = require('path');
 var configPath = './';
 if (process.env.USER === 'jenkins') {
   configPath = path.resolve(__dirname, '../../');
-  console.log('Config path: ' + configPath);
 }
 
-require('dotenv').load({path: configPath});
+const result = require('dotenv').load({path: configPath});
+
+if (result.error) {
+  throw result.error
+}
 
 var port = process.env.PORT || 5050;
 
