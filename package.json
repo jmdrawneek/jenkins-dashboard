@@ -1,0 +1,24 @@
+{
+  "name": "jenkins-dashboard",
+  "version": "1.0.0",
+  "description": "Tools to enhance a Jenkins continuous intergration system ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmdrawneek/jenkins-dashboard.git"
+  },
+  "author": "James Drawneek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jmdrawneek/jenkins-dashboard/issues"
+  },
+  "homepage": "https://github.com/jmdrawneek/jenkins-dashboard#readme",
+  "dependencies": {
+    "mozaik": "^1.4.4",
+    "mozaik-ext-jenkins": "^1.2.0",
+    "react": "^16.2.0"
+  }
+}
